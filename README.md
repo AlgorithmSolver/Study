@@ -3,7 +3,7 @@
 
 ## Language
 + ~~Html/Css(스터디 완료 But 데이터가 없음 => 복습할 때 한번 정리하기)~~
-+ Javascript
++ Javascript(진행중)
 
 ## Framework
 + ~~React.js(예정)~~
