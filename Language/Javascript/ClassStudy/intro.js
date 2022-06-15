@@ -233,3 +233,101 @@
   const obj = new Point("책");
   console.log(obj.getTitle());
 }
+
+//super
+{
+  // Basic
+  class Book {
+    getTitle() {
+      console.log("슈퍼");
+    }
+  }
+  class Point extends Book {
+    getTitle() {
+      super.getTitle(); // 슈퍼
+      console.log("서브");
+    }
+  }
+  new Point().getTitle();
+}
+
+{
+  // constructor 호출
+  // 1. 모두작성하지 않는 경우
+  class Book {
+    setTitle(title) {
+      this.title = title;
+    }
+  }
+  class Point extends Book {}
+  const obj = new Point();
+  obj.setTitle("책");
+  console.log(obj.title);
+}
+
+{
+  // 2. 슈퍼 클래스에만 작성
+  class Book {
+    constructor(title) {
+      this.title = title;
+    }
+  }
+  class Point extends Book {}
+  const obj = new Point();
+  console.log(obj.title);
+}
+
+{
+  // 3. 슈퍼 클래스X 서브클래스만 작성 => 에러
+  class Book {
+    setTitle(title) {
+      this.title = title;
+    }
+  }
+  class Point extends Book {
+    // constructor(point) {
+    //   this.point = point;
+    // }
+  }
+  //const obj = new Point();
+  //console.log(obj.title);
+}
+
+{
+  // 4. 서브와 슈퍼 모두 클래스 작성
+  class Book {
+    constructor(title) {
+      this.title = title;
+    }
+  }
+  class Point extends Book {
+    constructor(title, point) {
+      super(title);
+      this.point = point;
+    }
+  }
+  const obj = new Point("책", 100);
+  console.log(`${obj.title}, ${obj.point}`);
+}
+
+// Built-in 오브젝트 상속
+{
+  class Point extends Array {
+    constructor() {
+      super();
+    }
+    getTotal() {
+      let total = 0;
+      for (const value of this) {
+        total += value;
+      }
+      return total;
+    }
+  }
+  const obj = new Point();
+  obj.push(10, 20, 30);
+  console.log(obj.getTotal());
+}
+
+{
+}
