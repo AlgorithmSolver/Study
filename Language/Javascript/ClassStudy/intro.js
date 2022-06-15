@@ -208,3 +208,28 @@
   }
   book();
 }
+
+// 상속
+{
+  // 부모 - super 클래스, 자식 - sub 클래스
+}
+
+{
+  class Book {
+    // 2층
+    constructor(title) {
+      this.title = title;
+    }
+    getTitle() {
+      return this.title;
+    }
+  }
+  class Point extends book {
+    // 1층
+    setPoint(point) {
+      this.point = point;
+    }
+  }
+  const obj = new Point("책");
+  console.log(obj.getTitle());
+}
