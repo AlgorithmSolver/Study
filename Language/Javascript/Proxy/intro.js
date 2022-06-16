@@ -264,4 +264,36 @@
 
 {
   const target = { point: 100 };
+  Object.preventExtensions(target);
+  const handler = {
+    has(target, key) {
+      console.log("has 트랩 실행");
+      return target[key];
+    },
+  };
+  const obj = new Proxy(target, handler);
+  console.log("point" in obj);
+}
+
+{
+  //
+  const target = { point: 100 };
+  const handler = {
+    deleteProperty(target, key) {
+      if (key in target) {
+        delete target[key];
+        return true;
+      }
+      return false;
+    },
+  };
+  const obj = new Proxy(target, handler);
+  console.log(delete obj.point);
+  console.log(target.point);
+  console.log(delete obj.point);
+  console.log(delete target.point);
+}
+
+{
+  //
 }
