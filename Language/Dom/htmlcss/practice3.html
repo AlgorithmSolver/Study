@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style></style>
+    <title>Document</title>
+    <style>
+      body {
+        margin-top: 70px;
+      }
+
+      body > div {
+        /* 책 전체 모양 */
+        width: 550px;
+        height: 720px;
+        margin: 0 auto;
+        background-color: #222a36;
+        position: relative;
+      }
+
+      body > div > div {
+        /* 각 블록 */
+        display: flex;
+      }
+
+      body > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+        /* First Step */
+        margin-top: 10px;
+        font-size: 16px;
+        color: #d4e8f3;
+      }
+
+      body > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+        display: flex;
+      }
+
+      body
+        > div
+        > div:nth-child(1)
+        > div:nth-child(2)
+        > div:nth-child(2)
+        > div:nth-child(1) {
+        /* Series */
+        font-weight: 100;
+        font-size: 14px;
+        color: #d4e8f3;
+        margin-left: 5px;
+        line-height: 1px;
+      }
+
+      body
+        > div
+        > div:nth-child(1)
+        > div:nth-child(2)
+        > div:nth-child(2)
+        > div:nth-child(2) {
+        /* 0 */
+        color: rgb(181, 175, 175);
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 5px;
+        line-height: 10px;
+      }
+
+      body
+        > div
+        > div:nth-child(1)
+        > div:nth-child(2)
+        > div:nth-child(2)
+        > div:nth-child(3) {
+        /* 0 */
+        color: orange;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 1px;
+        line-height: 10px;
+      }
+
+      body > div > div:nth-child(1) {
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-bottom: 40px;
+      }
+
+      body > div > div:nth-child(1) > div:nth-child(3) {
+        /* 무조건 자세하게 */
+        padding-top: 10px;
+        margin-left: 30px;
+        color: #d4e8f3;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      body > div > div:nth-child(2) {
+        /* BIG J, 처음만나는, 자바스크립트, avaScript, list 3개 */
+        margin-left: 205px;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(1) {
+        /* Big J - wrap */
+        width: 200px;
+        height: 500px;
+        background-color: #e41a88;
+        position: absolute;
+        border-bottom-right-radius: 160px;
+        left: 0px;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+        /* Big J - upper box */
+        width: 100px;
+        height: 300px;
+        background-color: #222a36;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+        /* Big J - below box */
+        width: 100px;
+        height: 120px;
+        border-radius: 0 0 100px 5px;
+        background-color: #222a36;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+        /* 처음 */
+        color: orange;
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+        /* 만나는 */
+        color: orange;
+        font-size: 70px;
+        font-weight: 300;
+        line-height: 50px;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+        /* 자바스크립트 */
+        color: #d4e8f3;
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 70px;
+        margin-top: 8px;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+        /* avaScript */
+        margin-top: 50px;
+        color: #e41a88;
+        font-size: 80px;
+        font-weight: 500;
+        line-height: 70px;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(2) > ul {
+        /* 3개 리스트 */
+        margin-top: 30px;
+        color: #d4e8f3;
+        font-size: 10px;
+        padding: 15px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+
+      body > div > div:nth-child(3) {
+        background-color: #222a36;
+        color: rgb(62, 60, 60);
+        padding-left: 30px;
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 0.9;
+      }
+
+      body > div > div:nth-child(4) {
+        /* 맨 하단 지음, 옮김 로고 */
+        justify-content: space-between;
+        background-color: #222a36;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(1) {
+        /* 지음, 옮김 */
+        margin-top: 30px;
+        display: flex;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
+        /* 가노 스케하루 */
+        color: #d4e8f3;
+        font-size: 12px;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        /* 지음 */
+        color: #d4e8f3;
+        font-size: 10px;
+        font-weight: 100;
+        margin-left: 3px;
+      }
+
+      .color-gray {
+        color: grey;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(1) > div:nth-child(3) {
+        /* 지음 */
+        color: #d4e8f3;
+        font-size: 12px;
+        margin-left: 3px;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(1) > div:nth-child(4) {
+        /* 지음 */
+        color: #d4e8f3;
+        font-size: 10px;
+        font-weight: 100;
+        margin-left: 3px;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(2) {
+        /* 제이펍 로고*/
+        margin-top: 14px;
+      }
+
+      body > div > div > div > img {
+        /* 발바닥 사진 */
+        width: 20px;
+        transform: rotate(-27deg);
+      }
+    </style>
+  </head>
+  <!-- Float을 쓰지 않는다 -->
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>
+          <img class="img" src="./foot_warning.svg" alt="foot" />
+        </div>
+        <div>
+          <div>First Step</div>
+          <div>
+            <div>Series</div>
+            <div>0</div>
+            <div>1</div>
+          </div>
+        </div>
+        <div>무조건 자세하게! 알기 쉬운 설명!</div>
+      </div>
+
+      <!-- body > div > div:nth-child(2) -->
+      <div class="main-section">
+        <!-- body > div > div:nth-child(2) > div:nth-child(1) -->
+        <div>
+          <!-- BIG J - wrap -->
+          <!-- body > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) -->
+          <div>
+            <!-- Big J - upper1 -->
+          </div>
+          <div>
+            <!-- Big J - upper2 -->
+          </div>
+        </div>
+        <!-- body > div > div:nth-child(2) > div:nth-child(2) -->
+        <div>
+          <div class="color-gray">처음</div>
+          <div>만나는</div>
+          <div>자바스크립트</div>
+          <div>avaScript</div>
+          <ul>
+            <li>자바스크립트의 왕도를 안내하는 최고의 교과서!</li>
+            <li>따라 하기 쉬운 예제로 이론과 실무를 동시에 익힌다!</li>
+            <li>
+              자바스크립트를 처음 접하는 독자와 좌절한 경험이 있는 독자 모두를
+              위한 책!
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="shadow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        itaque<br />
+        unde, voluptas quia eius sequi suscipit dolore eligendi neque ipsam<br />
+        assumenda quod quidem quae minus blanditiis, dicta tempore ullam<br />
+        molestias.lorem Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.<br />
+        Id quam voluptatibus vero cum maiores at quasi, minus libero ut autem<br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        itaque<br />
+        unde, voluptas quia eius sequi suscipit dolore eligendi neque ipsam<br />
+        assumenda quod quidem quae minus blanditiis, dicta tempore ullam<br />
+        molestias.lorem Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.<br />
+      </div>
+
+      <div class="footer">
+        <div class="footer-name">
+          <div>가노 스케하루</div>
+          <div>지음 |</div>
+          <div>김완섭</div>
+          <div>옮김</div>
+        </div>
+        <div class="footer-logo">
+          <div>Jpub</div>
+          <div>제이펍</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
