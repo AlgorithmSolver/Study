@@ -1,0 +1,236 @@
+.mgt-8 {
+  margin-top: 8px;
+}
+.mgt-10 {
+  margin-top: 10px;
+}
+.mgt-20 {
+  margin-top: 20px;
+}
+.mgt-30 {
+  margin-top: 30px;
+}
+.mgt-40 {
+  margin-top: 40px;
+}
+.mgt-50 {
+  margin-top: 50px;
+}
+.mgt-60 {
+  margin-top: 60px;
+}
+.mgt-70 {
+  margin-top: 70px;
+}
+.mgt-80 {
+  margin-top: 80px;
+}
+.mgt-90 {
+  margin-top: 90px;
+}
+
+.mgt-horizontal-middle {
+  margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-55 {
+  font-size: 55px;
+}
+
+.fs-70 {
+  font-size: 70px;
+}
+
+.fs-80 {
+  font-size: 80px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.color-white {
+  color: #d4e8f3;
+}
+
+.color-zero {
+  color: rgb(181, 175, 175);
+}
+
+.color-orange {
+  color: orange;
+}
+
+.color-pink {
+  color: #e41a88;
+}
+
+.width-height-book {
+  width: 550px;
+  height: 720px;
+}
+
+.ml-1 {
+  margin-left: 1px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.ml-205 {
+  margin-left: 205px;
+}
+
+.lh-1 {
+  line-height: 1px;
+}
+
+.lh-10 {
+  line-height: 10px;
+}
+
+.lh-50 {
+  line-height: 50px;
+}
+
+.lh-70 {
+  line-height: 70px;
+}
+
+.background-color-book {
+  background-color: #222a36;
+}
+
+.img-size-form {
+  width: 20px;
+  transform: rotate(-27deg);
+}
+
+.padding-header {
+  padding: 20px 0px 40px 20px;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.width-height-bigj-wrap {
+  width: 200px;
+  height: 500px;
+}
+
+.background-color-bigj {
+  background-color: #e41a88;
+}
+
+.border-bottom-right-radius-160 {
+  border-bottom-right-radius: 160px;
+}
+
+.l-0 {
+  left: 0px;
+}
+
+.width-height-upper-1 {
+  width: 100px;
+  height: 300px;
+}
+
+.background-color-upper {
+  background-color: #222a36;
+}
+
+body > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  /* Big J - below box */
+
+  background-color: #222a36;
+}
+
+.width-height-upper-2 {
+  width: 100px;
+  height: 120px;
+}
+
+.border-radius-upper2 {
+  border-radius: 0 0 100px 5px;
+}
+
+.padding-ul {
+  padding: 15px 15px 0px 15px;
+}
+
+.color-shadow {
+  color: rgb(62, 60, 60);
+}
+
+.pdl-30 {
+  padding-left: 30px;
+}
+
+.lh-09 {
+  line-height: 0.9;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.pdr-30 {
+  padding-right: 30px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.mgl-3 {
+  margin-left: 3px;
+}
+
+.mgt-14 {
+  margin-top: 14px;
+}

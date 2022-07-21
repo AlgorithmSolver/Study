@@ -1,3 +1,7 @@
+<!-- 책표지 따라서 만들어보기 -->
+<!-- 1.ID와 CLASS를 결합한 방식으로 사용 -->
+<!-- 2.container > header, section, shadow, footer로 나눠서 사용 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,26 +11,66 @@
     <style></style>
     <title>Document</title>
     <style>
-      body {
+      .mgt-10 {
+        margin-top: 10px;
+      }
+      .mgt-20 {
+        margin-top: 20px;
+      }
+      .mgt-30 {
+        margin-top: 30px;
+      }
+      .mgt-40 {
+        margin-top: 40px;
+      }
+      .mgt-50 {
+        margin-top: 50px;
+      }
+      .mgt-60 {
+        margin-top: 60px;
+      }
+      .mgt-70 {
         margin-top: 70px;
       }
-
-      body > div {
-        /* 책 전체 모양 */
-        width: 550px;
-        height: 720px;
-        margin: 0 auto;
-        background-color: #222a36;
-        position: relative;
+      .mgt-80 {
+        margin-top: 80px;
+      }
+      .mgt-90 {
+        margin-top: 90px;
       }
 
-      body > div > div {
-        /* 각 블록 */
+      .mgt-horizontal-middle {
+        margin: 0 auto;
+      }
+
+      .pst-rel {
+        position: relative;
+      }
+      .pst-abs {
+        position: absolute;
+      }
+
+      .book-layout {
+        width: 550px;
+        height: 720px;
+      }
+
+      .book-color {
+        background-color: #222a36;
+      }
+
+      .dsp-flex {
         display: flex;
       }
 
-      body > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+      #header > div:nth-child(2) > div:nth-child(1) {
         /* First Step */
+        margin-top: 10px;
+        font-size: 16px;
+        color: #d4e8f3;
+      }
+
+      .logo-word-style-big {
         margin-top: 10px;
         font-size: 16px;
         color: #d4e8f3;
@@ -43,6 +87,14 @@
         > div:nth-child(2)
         > div:nth-child(1) {
         /* Series */
+        font-weight: 100;
+        font-size: 14px;
+        color: #d4e8f3;
+        margin-left: 5px;
+        line-height: 1px;
+      }
+
+      .logo-word-style-small {
         font-weight: 100;
         font-size: 14px;
         color: #d4e8f3;
@@ -234,12 +286,11 @@
       }
     </style>
   </head>
-  <!-- Float을 쓰지 않는다 -->
-  <body>
-    <div class="container">
-      <div class="header">
+  <body class="mgt-70">
+    <div id="book" class="dsp-flex pst-rel book-layout book-color">
+      <div id="header">
         <div>
-          <img class="img" src="./foot_warning.svg" alt="foot" />
+          <img src="./foot_warning.svg" alt="foot" />
         </div>
         <div>
           <div>First Step</div>
@@ -253,7 +304,7 @@
       </div>
 
       <!-- body > div > div:nth-child(2) -->
-      <div class="main-section">
+      <div id="section">
         <!-- body > div > div:nth-child(2) > div:nth-child(1) -->
         <div>
           <!-- BIG J - wrap -->
@@ -267,7 +318,7 @@
         </div>
         <!-- body > div > div:nth-child(2) > div:nth-child(2) -->
         <div>
-          <div class="color-gray">처음</div>
+          <div>처음</div>
           <div>만나는</div>
           <div>자바스크립트</div>
           <div>avaScript</div>
@@ -298,14 +349,14 @@
         elit.<br />
       </div>
 
-      <div class="footer">
-        <div class="footer-name">
+      <div id="footer">
+        <div>
           <div>가노 스케하루</div>
           <div>지음 |</div>
           <div>김완섭</div>
           <div>옮김</div>
         </div>
-        <div class="footer-logo">
+        <div>
           <div>Jpub</div>
           <div>제이펍</div>
         </div>

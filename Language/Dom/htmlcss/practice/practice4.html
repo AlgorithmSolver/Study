@@ -1,0 +1,377 @@
+<!-- practice3에서 했던 것을 클래스를 사용해서 구조화하기 ==> 망함 ==> practice5에서 다시 -->
+<!-- 1.클래스 작명방법 사용 -> Tailwind, Bootstrap같은 작명방법 -->
+<!-- 2.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style></style>
+    <title>Document</title>
+    <style>
+      .margin-top-70px {
+        margin-top: 70px;
+      }
+
+      .container {
+        width: 550px;
+        height: 720px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .color-book-background {
+        background-color: #222a36;
+      }
+
+      #header {
+        padding: 20px 0px 40px 20px;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .margin-top-10px {
+        margin-top: 10px;
+      }
+
+      .font-size-16px {
+        font-size: 16px;
+      }
+
+      .font-color-white {
+        color: #d4e8f3;
+      }
+
+      #series {
+        /* Series */
+        color: #d4e8f3;
+        margin-left: 5px;
+      }
+
+      .font-weight-100 {
+        font-weight: 100;
+      }
+
+      .font-size-14px {
+        font-size: 14px;
+      }
+
+      .line-height-1px {
+        line-height: 1px;
+      }
+
+      #zero {
+        /* 0 */
+        margin-left: 5px;
+      }
+
+      .font-color-zero {
+        color: rgb(181, 175, 175);
+      }
+
+      .font-size-zero {
+        font-size: 20px;
+      }
+
+      .font-weight-zero {
+        font-weight: 500;
+      }
+
+      .line-height-zero {
+        line-height: 10px;
+      }
+
+      #one {
+        /* 1 */
+        margin-left: 1px;
+      }
+
+      .font-color-one {
+        color: orange;
+      }
+
+      .font-size-one {
+        font-size: 20px;
+      }
+
+      .font-weight-one {
+        font-weight: 500;
+      }
+
+      .line-height-one {
+        line-height: 10px;
+      }
+
+      #precise {
+        /* 무조건 자세하게 */
+        padding: 10px 0px 0px 30px;
+        color: #d4e8f3;
+      }
+
+      .font-size-18px {
+        font-size: 18px;
+      }
+
+      .font-weight-500 {
+        font-weight: 500;
+      }
+
+      #section {
+        /* BIG J, 처음만나는, 자바스크립트, avaScript, list 3개 */
+        margin-left: 205px;
+      }
+
+      #bigj {
+        /* Big J - wrap */
+        width: 200px;
+        height: 500px;
+        position: absolute;
+        border-bottom-right-radius: 160px;
+        left: 0px;
+      }
+
+      .bigj-color-pink {
+        background-color: #e41a88;
+      }
+
+      #bigj-upper1 {
+        /* Big J - upper box */
+        width: 100px;
+        height: 300px;
+        background-color: #222a36;
+      }
+
+      #bigj-upper2 {
+        /* Big J - below box */
+        width: 100px;
+        height: 120px;
+        border-radius: 0 0 100px 5px;
+        background-color: #222a36;
+      }
+
+      #first {
+        /* 처음 */
+      }
+
+      #meet {
+        /* 만나는 */
+        line-height: 50px;
+      }
+
+      .orange-word-style {
+        color: orange;
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+        /* 자바스크립트 */
+        margin-top: 8px;
+      }
+
+      .js-word-style {
+        color: #d4e8f3;
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 70px;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+        /* avaScript */
+        margin-top: 50px;
+        line-height: 70px;
+        color: #e41a88;
+      }
+
+      .as-word-style {
+        font-size: 80px;
+        font-weight: 500;
+      }
+
+      body > div > div:nth-child(2) > div:nth-child(2) > ul {
+        /* ul, 3개 리스트 */
+      }
+
+      .list-style {
+        margin-top: 30px;
+        color: #d4e8f3;
+        font-size: 10px;
+        padding: 15px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+
+      #shadow {
+        background-color: #222a36;
+        color: rgb(62, 60, 60);
+        padding-left: 30px;
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 0.9;
+      }
+
+      #footer {
+        /* 맨 하단 지음, 옮김 로고 */
+        justify-content: space-between;
+        background-color: #222a36;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(1) {
+      }
+
+      .publish-name {
+        /* 지음, 옮김 */
+        margin-top: 30px;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
+        /* 가노 스케하루 */
+        color: #d4e8f3;
+        font-size: 12px;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        /* 지음 */
+        color: #d4e8f3;
+        font-size: 10px;
+        font-weight: 100;
+        margin-left: 3px;
+      }
+
+      .color-gray {
+        color: grey;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(1) > div:nth-child(3) {
+        /* 지음 */
+        color: #d4e8f3;
+        font-size: 12px;
+        margin-left: 3px;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(1) > div:nth-child(4) {
+        /* 지음 */
+        color: #d4e8f3;
+        font-size: 10px;
+        font-weight: 100;
+        margin-left: 3px;
+      }
+
+      body > div > div:nth-child(4) > div:nth-child(2) {
+        /* 제이펍 로고*/
+      }
+
+      .jpub-logo {
+        /* 제이펍 로고*/
+        margin-top: 14px;
+      }
+
+      #foot-img {
+        width: 20px;
+        transform: rotate(-27deg);
+      }
+    </style>
+  </head>
+  <!-- Float을 쓰지 않는다 -->
+  <body class="margin-top-70px">
+    <div class="container color-book-background">
+      <div id="header" class="flex">
+        <div>
+          <img id="foot-img" src="./foot_warning.svg" alt="foot" />
+        </div>
+        <div>
+          <div class="margin-top-10px font-size-16px font-color-white">
+            First Step
+          </div>
+          <div class="flex">
+            <div
+              id="series"
+              class="font-weight-100 font-size-14px line-height-1px"
+            >
+              Series
+            </div>
+            <div
+              id="zero"
+              class="font-color-zero font-size-zero font-weight-zero line-height-zero"
+            >
+              0
+            </div>
+            <div
+              id="one"
+              class="font-color-one font-size-one font-weight-one line-height-one"
+            >
+              1
+            </div>
+          </div>
+        </div>
+        <div id="precise" class="font-size-18px font-weight-500">
+          무조건 자세하게! 알기 쉬운 설명!
+        </div>
+      </div>
+
+      <!-- body > div > div:nth-child(2) -->
+      <div id="section">
+        <!-- body > div > div:nth-child(2) > div:nth-child(1) -->
+        <div id="bigj" class="bigj-color-pink">
+          <!-- BIG J - wrap -->
+          <!-- body > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) -->
+          <div id="bigj-upper1">
+            <!-- Big J - upper1 -->
+          </div>
+          <div id="bigj-upper2">
+            <!-- Big J - upper2 -->
+          </div>
+        </div>
+        <!-- body > div > div:nth-child(2) > div:nth-child(2) -->
+        <div>
+          <div class="orange-word-style">처음</div>
+          <div id="meet" class="orange-word-style">만나는</div>
+          <div class="js-word-style">자바스크립트</div>
+          <div class="as-word-style">avaScript</div>
+          <ul class="list-style">
+            <li>자바스크립트의 왕도를 안내하는 최고의 교과서!</li>
+            <li>따라 하기 쉬운 예제로 이론과 실무를 동시에 익힌다!</li>
+            <li>
+              자바스크립트를 처음 접하는 독자와 좌절한 경험이 있는 독자 모두를
+              위한 책!
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="shadow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        itaque<br />
+        unde, voluptas quia eius sequi suscipit dolore eligendi neque ipsam<br />
+        assumenda quod quidem quae minus blanditiis, dicta tempore ullam<br />
+        molestias.lorem Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.<br />
+        Id quam voluptatibus vero cum maiores at quasi, minus libero ut autem<br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        itaque<br />
+        unde, voluptas quia eius sequi suscipit dolore eligendi neque ipsam<br />
+        assumenda quod quidem quae minus blanditiis, dicta tempore ullam<br />
+        molestias.lorem Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.<br />
+      </div>
+
+      <div id="footer" class="flex">
+        <div class="flex publish-name">
+          <div>가노 스케하루</div>
+          <div>지음 |</div>
+          <div>김완섭</div>
+          <div>옮김</div>
+        </div>
+        <div class="jpub-logo">
+          <div>Jpub</div>
+          <div>제이펍</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
