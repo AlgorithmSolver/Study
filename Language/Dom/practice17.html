@@ -1,0 +1,93 @@
+<!-- DOM 관련 기술 정리1. 오브젝트, 프로퍼티 -->
+<!-- a.데이터 프로퍼티 -->
+<!--    메서드1 : defineProperty(오브젝트, 키, {프로퍼티값 및 속성}) -->
+<!--      writable: 쓰기 enumerable: 열거, configurable: 변경방지(enumerable, configurable),쓰기만가능 -->
+<!--    메서드2 : 확인은 Object.getOwnPropertyDescriptor() -->
+<!--    메서드3 : defineProperties -->
+<!-- b.접근자 프로퍼티 : 값이 없음. 프로퍼티를 읽거나 쓸 때 호출하는 함수를 값 대신에 지정할 수 있는 프로퍼티임 -->
+<!--      get set writable enumerable -->
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport -> view + port : 보이는 '화면'을 이야기  -->
+    <!-- 나 지금 니가 보고있는 브라우저의 가로너비를 측정할거야 -->
+    <!-- 반응형 : 웹사이트 화나가 모든 디바이스를 대응하는 방식 -> 일관 관리가 가능, 무겁다 -->
+    <!-- 적응형 : 각기 다른 웹사이트를 송출해주는 방식 -->
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 데이터 프로퍼티 설정
+      const sports = {};
+      Object.defineProperty(sports, "swim", {
+        value: "수영",
+        enumerable: true,
+        writable: true,
+        configurable: true,
+      });
+      Object.defineProperty(sports, "tablepinpong", {
+        value: "탁구",
+        enumerable: true,
+        writable: true,
+        configurable: true,
+      });
+      Object.defineProperty(sports, "baseball", {
+        value: "야구",
+        writable: false,
+        enumerable: true,
+        configurable: true,
+      });
+      Object.defineProperty(sports, "soccer", {
+        value: "축구",
+        writable: true,
+        enumerable: true,
+        configurable: true,
+      });
+      for (let key in sports) {
+        console.log(key + ": " + sports[key]);
+      }
+
+      console.log(Object.getOwnPropertyDescriptor(sports, "swim"));
+
+      // 접근자 프로퍼티 설정
+      const food = {
+        name: "짜장면",
+      };
+
+      Object.defineProperty(food, "foodName", {
+        get foodName() {
+          return `${name}`;
+        },
+        set foodname(name) {
+          this.name = name;
+        },
+        enumerable: true,
+        configurable: true,
+      });
+
+      console.log(Object.getOwnPropertyDescriptors(food));
+
+      // definePropeties
+      const clothes = {};
+      Object.defineProperties(clothes, {
+        tshirts: {
+          value: "티셔츠",
+          writable: true,
+          configurable: true,
+          enumerable: true,
+        },
+        hat: {
+          value: "모자",
+          writable: true,
+          configurable: true,
+          enumerable: true,
+        },
+      });
+      console.log(Object.getOwnPropertyDescriptors(clothes));
+    </script>
+  </body>
+</html>

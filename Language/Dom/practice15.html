@@ -1,0 +1,27 @@
+<!-- 자바스크립트의 Host Environment -->
+<!-- Object와 관련 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="group">
+      <li ld="one">1번</li>
+      <li ld="two">2번</li>
+    </ul>
+    <script>
+      const group = document.getElementById("group");
+      const list = group.getElementsByTagName("li");
+      console.log(list[Symbol.toStringTag]);
+      // list변수에 설정된 오브젝트 이름은 HTMLCollection
+      // HTMLCollection
+      for (let element of list) {
+        console.log(element.id);
+      }
+    </script>
+  </body>
+</html>

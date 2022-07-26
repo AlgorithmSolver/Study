@@ -1,0 +1,66 @@
+<!-- position, display 차이점 정리 -->
+<!-- 
+  * display 정리
+    - display 의 종류 : block, inline, inline-block, none
+      -- 1. block
+        --- 수직으로 쌓는다.
+        --- 가로세로 세팅 가능
+      -- 2. inline
+        --- 가로로 쌓는다.
+        --- 가로세로 세팅 불가능
+      -- 3. inline-block
+        --- 가로로 쌓는다.
+        --- 가로세로 세팅 가능
+  * position 정리
+    - position의 종류 : static, relative, absolute, fixed, sticky
+      -- 1.static
+        --- 요소를 문서 흐름에 맞추어 배치
+      -- 2.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      body > div > header > nav > ul {
+        list-style-type: none;
+        display: flex;
+      }
+
+      body > div > header > nav > ul > li {
+        width: 100px;
+        height: 50px;
+        background-color: antiquewhite;
+        margin: 3px;
+        /* text-align: center; flex없이 가로상의 중심잡기 - 정렬관해서는 flex를 쓰는게 맞음*/
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav>
+          <ul>
+            <li>menu-1</li>
+            <li>menu-2</li>
+            <li>menu-3</li>
+            <li>menu-4</li>
+            <li>menu-5</li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>

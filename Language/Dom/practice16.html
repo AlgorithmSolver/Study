@@ -1,0 +1,22 @@
+<!-- JS Object, Property : 함수 실행 단계, 오브젝트, 프로퍼티 -->
+<!-- 함수 실행 단계 -->
+<!-- 호출 전 : 함수 실행을 위한 기반 환경 설정 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const sports = ["체조", "펜싱"];
+      // new 연산자를 사용하지 않아도 인스턴스가 생성 =>
+      console.log("1.", sports instanceof Array);
+      const communicate = sports.join(",");
+      console.log("2.", communicate);
+      console.log("3.", communicate.split(","));
+    </script>
+  </body>
+</html>

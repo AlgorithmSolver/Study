@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script>
+    // <HINT>
+    // const root = document.getElementById("root");
+    // const section = document.createElement("section");
+    // root.appendChild(section);
+
+    // 문제 : const arr = [1,2,3,4]가 있으면, <li>1</li>
+    // <li><a>1</a></li>
+    // <li>2</li>
+    // <li>3</li>
+    // <li>4</li>
+    // 가 나오도록 만들어봐라
+    const arr = [1, 2, 3, 4, 5];
+    const root = document.getElementById("root");
+    const ul = document.createElement("ul");
+    // const li = document.createElement("li");
+    root.appendChild(ul);
+    for (let i = 0; i < arr.length; i++) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      li.appendChild(a).href = "https://www.naver.com";
+      a.innerText = arr[i];
+      ul.appendChild(li);
+    }
+
+    // Q2. 1번에 있는 요소를 클릭하면 글씨 1이 naver로 바뀌도록 구성,( 이벤트 핸들링 )
+    //      ul > li 첫번째 요소를 인식할 수 있는 방법?
+    // const choice = document.getElementsByTagName("li")[0];
+    // choice.addEventListener("click", function (event) {
+    //   choice.innerText = "네이버";
+    // });
+
+    // Q3. 1,2,3,4,5를 눌렀을 때 arr2에 대응해서 글씨가 변하게 해보기
+    // 인식은 어떻게 해야함?
+    const arr2 = [
+      "네이버",
+      "제이티비씨",
+      "미디어오늘",
+      "아시아경제",
+      "신아일보",
+    ];
+    const choices = document.getElementsByTagName("li"); // getElementsByTagName는 어떻게 구성되어있는가? (폴리필이 힌트)
+    for (let i = 0; i < choices.length; i++) {
+      // choices[i].innerText = "안녕";
+      choices[i].addEventListener("click", function (event) {
+        choices[i].innerText = arr2[i];
+      });
+    }
+
+    // map함수 사용 => 웹 으로 가능 : 근데 왜 안될까? HTML객체 = Array-like객체
+  </script>
+</html>

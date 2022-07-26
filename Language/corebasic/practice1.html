@@ -1,0 +1,30 @@
+<!-- * 무겁게 생각하지 말고 가볍게 생각해보자 * -->
+<!-- => json파일을 만들어서 입력/출력해보기 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input />
+    <script type="text/javascript" src="./daejeon.json">
+      let xhr = new XMLHttpRequest();
+      // let paramVal = "paramVal";
+      let target = "./daejeon.json";
+      // xhr.open("GET",target+"?paramName="+paramVal);
+      xhr.open("GET",target);
+      xhr.send();
+
+      xhr.onreadystatechange=function() {
+        if(xhr.readyState === XMLHttpRequest.DON){
+          if(xhr.status===200){
+            let loadedJSON=JSON.parse(xhr.responseText);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

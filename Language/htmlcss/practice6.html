@@ -1,0 +1,89 @@
+<!-- 책표지 따라서 만들어보기 -->
+<!-- 1.클래스 사용하지 않고 만들기  -->
+<!-- 2.Float을 사용하지 않기  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./practice6.css" />
+    <title>책표지 배끼기</title>
+  </head>
+  <!-- Float을 쓰지 않는다 -->
+  <body class="mgt-70">
+    <div
+      id="book"
+      class="width-height-book background-color-book relative mgt-horizontal-middle"
+    >
+      <div id="header" class="flex padding-header">
+        <img class="img-size-form" src="./foot_warning.svg" alt="foot" />
+        <div>
+          <div class="mgt-10 fs-16 color-white">First Step</div>
+          <div class="flex">
+            <div class="fw-100 fs-14 color-white ml-5 lh-1">Series</div>
+            <div class="color-zero fs-20 fw-500 ml-5 lh-10">0</div>
+            <div class="color-orange fs-20 fw-500 ml-1 lh-10">1</div>
+          </div>
+        </div>
+        <div class="padding-top-10 ml-30 color-white fs-18 fw-500">
+          무조건 자세하게! 알기 쉬운 설명!
+        </div>
+      </div>
+
+      <div id="section" class="flex ml-205">
+        <div
+          class="absolute width-height-bigj-wrap background-color-bigj border-bottom-right-radius-160 l-0"
+        >
+          <div class="width-height-upper-1 background-color-upper"></div>
+          <div
+            class="width-height-upper-2 background-color-upper border-radius-upper2"
+          ></div>
+        </div>
+        <div>
+          <div class="color-orange fs-70 fw-300">처음</div>
+          <div class="color-orange fs-70 fw-300 lh-50">만나는</div>
+          <div class="color-white fs-55 fw-500 lh-70 mgt-8">자바스크립트</div>
+          <div class="color-pink fs-80 fw-500 lh-70 mgt-50">avaScript</div>
+          <ul class="mgt-30 color-white fs-10 padding-ul">
+            <li>자바스크립트의 왕도 를 안내하는 최고의 교과서!</li>
+            <li>따라 하기 쉬운 예제로 이론과 실무를 동시에 익힌다!</li>
+            <li>
+              자바스크립트를 처음 접하는 독자와 좌절한 경험이 있는 독자 모두를
+              위한 책!
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        id="shadow"
+        class="background-color-book color-shadow pdl-30 pdr-30 mgt-10 lh-09 text-align-justify"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        itaque unde, voluptas quia eius sequi suscipit dolore eligendi neque
+        ipsam assumenda quod quidem quae minus blanditiis, dicta tempore ullam
+        molestias.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Id quam voluptatibus vero cum maiores at quasi, minus libero ut autem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        itaque unde, voluptas quia eius sequi suscipit dolore eligendi neque
+      </div>
+
+      <div
+        id="footer"
+        class="flex space-between color-book-background pdl-30 pdr-30"
+      >
+        <div class="flex mgt-30">
+          <div class="color-white fs-12">가노 스케하루</div>
+          <div class="color-white fs-10 fw-100 mgl-3">지음 |</div>
+          <div class="color-white fs-12 mgl-3">김완섭</div>
+          <div class="color-white fs-10 fw-100 mgl-3">옮김</div>
+        </div>
+        <div class="mgt-14">
+          <div class="color-white">Jpub</div>
+          <div class="color-white">제이펍</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

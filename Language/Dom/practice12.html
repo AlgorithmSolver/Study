@@ -1,0 +1,37 @@
+<!-- DOM 스터디 3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <label for="music">좋아하는 음악은?</label>
+    <!-- 시맨틱을 부여(id가 music, value는 장르입력 => 음악의 장르를 입력하는 input 생성) -->
+    <input id="music" value="장르를 입력하세요">좋아하는 음악은?</input>
+  </div>
+  <script>
+    // 시맨틱이 부여된 함수를 사용( get구하다 Element요소 byId아이디를 통해서 => 세부동작을 몰라도 함수를 파악가능)
+    // id가 music인 요소를 가져와서 inputMusicGenre(뉘앙스 : MusicGenre를 선택하는 input)에 할당
+    const inputMusicGenre = document.getElementById("music");
+    // 뉘앙스에는 목적이 담겨있음
+    const value = inputMusicGenre.value;
+
+    // 정리
+    // 1 시맨틱으로 앞뒤가 연결된 시나리오를 만들고, 뉘앙스(목적)을 결합
+    // 2 목적을 가진 시나리오가 됨
+
+    // 주의
+    // 값을 구하는 것과 값을 설정하는 것을 함꼐 설정하면 
+    // 1) 시나리오의 뉘앙스(목적)이 복수가 된다.
+    // 2) 
+
+    // 시맨틱과 뉘앙스의 차이점
+    // 아빠가 딸을 사랑한다 vs 연인이 연인을 사랑한다 에서 사랑한다의 시맨틱은 같지만 뉘앙스가 다르다.
+    // 따라서 뉘앙스의 범위를 좁히고 단순하게 만들어야한다.
+  </script>
+</body>
+</html>

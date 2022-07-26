@@ -1,0 +1,28 @@
+<!-- DOM 스터디 2 -->
+<!-- * 코드 작성 기준 공부 *-->
+<!-- 변수, 함수 이름에 시맨틱을 부여하면 -->
+<!-- 1) 코드가 시맨틱으로 연결된 흐름이 됨 -->
+<!-- 2) 코드가 흐름을 가진 하나의 시나리오가 됨 -->
+<!-- 즉, 코드에 시맨틱을 부여함으로서 앞뒤로 연결된 시나리오가 된다. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 값들(values)이라는 시맨틱을 가지고 있음
+      const values = [1, 2];
+      // getValue에는 값을 가져온다는 시맨틱이 담겨져 있고, 값을 가져오겠다는 뉘앙스(목적)이 담겨져 있음
+      const getValue = (index) => {
+        return values[index];
+      };
+      const value = getValue(1);
+      console.log(value);
+      // values와 getValues가 연결되면서
+    </script>
+  </body>
+</html>

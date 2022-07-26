@@ -1,0 +1,32 @@
+<!-- DOM 스터디 4 -->
+<!-- 뉘앙스의 단순화 방법 -->
+<!-- 코드가 함수의 시맨틱과 뉘앙스를 벗어나면 함수 내부의 코드를 
+     작고, 간단하게 작성 -> 함수의 이름이 보다 완전하게 시맨틱, 뉘앙스범위 축소-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <labal for="music">좋아하는 음악은</labal>
+    <input id="music" value="장르를 입력하세요" />
+    <script>
+      //
+      const getAttributeValue = (id) => {
+        const element = document.getElementById(id);
+        return element.value;
+      };
+      const value = getAttributeValue("music");
+      console.log(value);
+
+      //
+      const setAttribute = (id, value) => {
+        const element = document.getElementById(id);
+        element.value = value;
+      };
+    </script>
+  </body>
+</html>
